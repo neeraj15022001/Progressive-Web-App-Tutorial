@@ -25,11 +25,10 @@ async function showData() {
 
 showData();*/
 
-// Getting video length in 
+// Getting video length in
 /*fetch('https://cdn.api.video/vod/vi3FrFlStpE8rtMLt93N5fBk/mp4/1080/source.mp4', {method: "HEAD"})
 .then(response => {
     if(!response.ok) throw response.statusText
     console.log(response.headers.get('content-length')) //return size in bytes
 })
 */
-

@@ -29,7 +29,4 @@ self.addEventListener("fetch", (event) => {
 // Pre Caching resources
 
 const cacheName = "cache-v1";
-const resourcesToPrecache = [
-  "/",
-  "/index.html"
-];
+const resourcesToPrecache = ["/", "/index.html"];

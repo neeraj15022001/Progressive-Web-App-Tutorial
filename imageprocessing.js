@@ -14,9 +14,9 @@ const makeImageNode = (imgBlob) => {
 
 // Appending it in DOM
 const appendNode = (imageNode) => {
- const container = document.getElementById("container")
- container.appendChild(imageNode)
-}
+  const container = document.getElementById("container");
+  container.appendChild(imageNode);
+};
 
 // Processing an image
 
@@ -24,6 +24,5 @@ fetch("https://i.ibb.co/px2XJnS/profile.png")
   .then(readResponsesAsBlob)
   .then(makeImageNode)
   .then(appendNode);
-
 
 // Fetch API uses CORS(Cross Origin Resource Sharing) by default
