@@ -31,9 +31,5 @@ self.addEventListener("fetch", (event) => {
 const cacheName = "cache-v1";
 const resourcesToPrecache = [
   "/",
-  "index.html",
-  "styles/main.css",
-  "images/space1.jpg",
-  "images/space2.jpg",
-  "images/space3.jpg",
+  "/index.html"
 ];
