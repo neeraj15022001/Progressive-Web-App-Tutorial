@@ -26,16 +26,16 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
-self.addEventListener('push', event => {
-  const title = 'Yes, a message';
+self.addEventListener("push", (event) => {
+  const title = "Yes, a message";
   const body = "We have received a push message";
-  const tag = 'simple-push-example-tag'
-  const options ={
+  const tag = "simple-push-example-tag";
+  const options = {
     body: body,
-    tag: tag
+    tag: tag,
   };
-  
-   event.waitUntil(self.registration.showNotification(title, options));
+
+  event.waitUntil(self.registration.showNotification(title, options));
 });
 
 // Pre Caching resources
